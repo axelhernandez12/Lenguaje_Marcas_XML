@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="esquema_largo.xsd"
+    cif="A12345678"
+    fechaFundacion="2005-04-10">
+    <informacion>
+        <nombre>TechSolutions Inc.</nombre>
+        <direccion>
+            <calle>Avenida de la Innovación, 42</calle>
+            <ciudad>Madrid</ciudad>
+            <codigoPostal>28020</codigoPostal>
+        </direccion>
+        <contacto>
+            <telefono>+34 912 345 678</telefono>
+            <email>info@techsolutions.com</email>
+        </contacto>
+    </informacion>
+    <departamentos>
+        <departamento id="IT">
+            <nombre>Tecnología</nombre>
+            <presupuesto>500000.00</presupuesto>
+            <empleados>
+                <empleado id="EMP001" departamento="IT">
+                    <nombre>Ana</nombre>
+                    <apellidos>García López</apellidos>
+                    <dni>12345678Z</dni>
+                    <fechaContratacion>2018-06-15</fechaContratacion>
+                    <salario>45000.00</salario>
+                </empleado>
+            </empleados>
+        </departamento>
+    </departamentos>
+    <proyectos>
+        <proyecto codigo="PROJ-2023-001">
+            <nombre>Sistema de Gestión ERP</nombre>
+            <fechaInicio>2023-01-10</fechaInicio>
+            <porcentajeCompletado>75</porcentajeCompletado>
+            <equipo>
+                <miembro empleadoRef="EMP001" rol="LIDER" />
+            </equipo>
+        </proyecto>
+    </proyectos>
+</empresa>
